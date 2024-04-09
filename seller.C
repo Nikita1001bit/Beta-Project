@@ -7,8 +7,11 @@ private:
 int num_sales; 
 
 public: 
-Seller(); 
-Seller(string name, string id); 
+Seller():User(){
+}
+
+Seller(string n, string i):User(i,n){
+}
 setItemDetails(); // seller will update details about the product they are seller 
 setItemDetails(char archtype, string name, int quantity, float price); 
 
