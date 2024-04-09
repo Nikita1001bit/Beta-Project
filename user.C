@@ -39,28 +39,6 @@ User::User(const string& i, const string& n)
     num_buys = 0;
 }
 
-class Seller : public User 
-{
-    private:
-    float price;
 
-    public:
-    Seller();
-    void postitem();
-    void acceptReqest();
-    void displaylistings();
 
-};
 
-class Buyer : public User
-{
-    private:
-    float timedeadline;
-    long long int contact;
-    long int room_number;
-
-    public:
-    Buyer();
-    void requestitem();
-    void selectitem();
-};
