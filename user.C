@@ -13,6 +13,7 @@ class User
 
     public:
     User();
+    User(string id, string name); 
     void display();
     void setdata();
     friend class Item;
